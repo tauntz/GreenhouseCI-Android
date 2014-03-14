@@ -16,6 +16,7 @@ dependencies {
 }
 
 android {
+	somethingRandom "something.random.here.as.well"
     compileSdkVersion 19
     buildToolsVersion "19.0.0"
 
