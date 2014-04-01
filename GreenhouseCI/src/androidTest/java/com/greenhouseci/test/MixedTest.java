@@ -1,6 +1,7 @@
 package com.greenhouseci.test;
 
 import android.test.AndroidTestCase;
+import android.test.suitebuilder.annotation.Suppress;
 
 import java.lang.Exception;
 
@@ -31,6 +32,16 @@ public class MixedTest extends AndroidTestCase {
     }
 
     public void testSuccess2() throws Exception {
+        assertEquals(1, 1);
+        assertNotSame(1, 2);
+        assertTrue(true);
+        assertFalse(false);
+        assertTrue(true || false);
+        assertFalse(true && false);
+    }
+
+    @Suppress
+    public void testSkip() throws Exception {
         assertEquals(1, 1);
         assertNotSame(1, 2);
         assertTrue(true);
