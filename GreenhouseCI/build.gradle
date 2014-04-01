@@ -23,6 +23,6 @@ android {
     defaultConfig {
         testInstrumentationRunner = "android.test.InstrumentationTestRunner"
         minSdkVersion 8
-        targetSdkVersion 11
+        targetSdkVersion 12
     }
 }
